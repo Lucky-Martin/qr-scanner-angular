@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'qr-scanner';
+  qrData!: string;
+
+  onQRScanned(qrString: string) {
+    this.qrData = qrString;
+  }
 }
